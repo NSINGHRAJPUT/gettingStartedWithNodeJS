@@ -1,6 +1,14 @@
-const http = require("http");
-const requestHandler = require("./requestHandler");
+const express = require("express");
 
-const server = http.createServer(requestHandler);
+const app = express();
 
-server.listen(4000);
+app.use((req, res, next) => {
+  console.log("in the middleware");
+  next();
+});
+app.use((req, res, next) => {
+  console.log("in the another middleware");
+  res.send({ key1: "value" });
+});
+
+app.listen(4000);
