@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const express = require('express');
 const bodyParser = require('body-parser');
 
@@ -22,19 +22,3 @@ app.use('/',(req,res,next)=>{
     res.send('<h1>Hello from Express</h1>')
 })
 
-=======
-const express = require("express");
-
-const app = express();
-
-app.use((req, res, next) => {
-  console.log("in the middleware");
-  next();
-});
-app.use((req, res, next) => {
-  console.log("in the another middleware");
-  res.send({ key1: "value" });
-});
->>>>>>> a1e24d62ad001e5f257ed9d2f4ac54ad3f9a0922
-
-app.listen(4000);
