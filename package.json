@@ -14,7 +14,10 @@
     "nodemon": "^3.0.1"
   },
   "dependencies": {
+<<<<<<< HEAD
     "body-parser": "^1.20.2",
+=======
+>>>>>>> a1e24d62ad001e5f257ed9d2f4ac54ad3f9a0922
     "express": "^4.18.2"
   }
 }
